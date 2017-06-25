@@ -40,7 +40,7 @@ def matrix_factorization(R, P, Q, K, steps=5000, alpha=0.003, beta=0.001): #just
     return P, Q.T   
 
 
-'def matrix_factorization_implicit(R, P, Q, K, steps=5000, alpha=0.0002, beta=0.02): #implentation of matrix factorization with the implicit data
+def matrix_factorization_implicit(R, P, Q, K, steps=5000, alpha=0.0002, beta=0.02): #implentation of matrix factorization with the implicit data
     Q = Q.T
     B = numpy.zeros(shape=(4))
     for step in range(steps):
